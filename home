@@ -1,1 +1,20 @@
 
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>C.J.K. Welcome!</title>
+    </head>
+    
+    <body>
+    <table>
+        <tr align="center" bgcolor="ddeeff">
+            <td><font color="#00ffdd" size="5">这里是「C.J.K.」，欢迎你！</font></td>
+        </tr>
+    </table>
+    </body>
+    
+</html>
