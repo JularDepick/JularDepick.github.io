@@ -1,0 +1,68 @@
+body {
+	background-color: #e9eff9;
+}
+
+a {
+	color: #0045ff;
+}
+
+.articlearea001 {
+	width: auto;
+    position: absolute;
+	left: 25px;
+	right: 25px;
+	font-size: 25px;
+	color: #1f0f2f;
+	background-color: #e9eff9;
+	border-width: 2px;
+	border-style: solid;
+    border-color: #0066aa;
+	padding: 80px 20px 20px 10px;
+	margin: 50px 0px 50px 20px;
+	word-wrap: break-word;
+}
+
+.til001 {
+	font-size: 40px;
+}
+
+.til002 {
+	font-size: 35px;
+}
+
+.til003 {
+	font-size: 25px;
+}
+
+.audio001 {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 5vw;
+    height: 5vw;
+    border: solid #ee8877 1px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ee8877;
+    background-image: -webkit-linear-gradient(top, #ee6020, #ee8877);
+    background-image: -moz-linear-gradient(top, #ee6020, #ee8877);
+    background-image: -ms-linear-gradient(top, #ee6020, #ee8877);
+    background-image: -o-linear-gradient(top, #ee6020, #ee8877);
+    background-image: linear-gradient(to bottom, #ee6020, #ee8877);
+    -webkit-box-shadow: 2px 3px 8px #ee8877;
+    -moz-box-shadow: 2px 3px 8px #ee8877;
+    box-shadow: 2px 3px 8px #ee8877;
+    font-size: 3vw;
+    color: #e9eff9;
+    text-decoration: none;
+}
+
+.audio001:active {
+    background: #ee8877;
+    background-image: -webkit-linear-gradient(top, #ee8877, #ee6020);
+    background-image: -moz-linear-gradient(top, #ee8877, #ee6020);
+    background-image: -ms-linear-gradient(top, #ee8877, #ee6020);
+    background-image: -o-linear-gradient(top, #ee8877, #ee6020);
+    background-image: linear-gradient(to bottom, #ee8877, #ee6020);
+    text-decoration: none;
+}
