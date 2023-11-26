@@ -1,0 +1,6 @@
+<svg width="1000x" height="200px" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="0" width="1000" height="140" fill="#0066AA"/>
+    <rect x="0" y="140" width="1000" height="60" fill="#FFFFFF"/>
+    <text x="500" y="110" font-size="110" font-weight="900" text-anchor="middle" fill="#FFFFFF" font-family="KaiTi_GB2312">欢迎登陆元梦星球</text>
+    <text x="500" y="185" font-size="45" font-weight="600" text-anchor="middle" fill="#0066AA" font-famliy="SimSun">»» Welcome to Planet Yuameng ««</text>
+</svg>
