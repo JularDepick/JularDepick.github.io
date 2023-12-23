@@ -1,0 +1,107 @@
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- 引入jQuery库 -->
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <img id="home-top-img"/>
+        
+        <hr style="margin:20px 0;">
+            
+        <h1 style="text-align:center;color:#0066AA;">本站导航</h1>
+        <nav id="navarea">
+            <ul id="navbar">
+                <li><span>>> <a id="alink-home">首页</a></span></li>
+                <li><span>>> <a id="alink-Expand">扩展</a></span>
+                    <ul>
+                        <li><span>> <a id="alink-Expand-Page">扩展页</a></span>
+                            <ul>
+                                <li>> <a id="alink-Expand-Page-UAV_MAS">UAV.MAS</a></li>
+                            </ul>
+                        </li>
+                        <li><span>> <a id="alink-Expand-Prog">扩展项</a></span>
+                            <ul>
+                                <li>> <a id="alink-Expand-Prog-MusicPlayer">MusicPlayer</a></li>
+                                <li>> <a id="alink-Expand-Prog-2048">2048</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+    </body>
+</html>
+
+<style>
+    * {
+        //margin: 0;
+        //padding: 0;
+        font-family: "华文楷体","宋体";
+    }
+    
+    #home-top-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        border: 2px solid #0066AA;
+        border-radius: 25px;
+        width: 100%;
+    }
+    
+    #navarea {
+        user-select: none;
+    }
+    
+    #navarea li {
+        list-style: none;
+        color: #00AAFF;
+        font-weight: 600;
+    }
+    
+    #navarea a {
+        background-color: none;
+        text-decoration: underline;
+        color: #00AAFF;
+    }
+    
+    #navarea a:active {
+        background: none;
+        color: #0033CC;
+    }
+    
+    #navbar > li >span {
+        font-size: 35px;
+    }
+    
+    #navbar > li > ul > li > span {
+        font-size: 30px;
+    }
+    
+    #navbar > li > ul > li > ul > li {
+        margin: 10px 0;
+        font-size: 28px;
+    }
+    
+</style>
+
+<script>
+    /* 伪·根目录 */
+    const Hlink="https://JularDepick.github.io/Yuameng";
+    
+    /* 链接渲染 */
+    $(document).ready(function() {
+        $("#home-top-img").attr("src",Hlink+"/home/Welcome.svg");
+        
+        $("#alink-home").attr("href",Hlink+"/home/");
+        $("#alink-Expand").attr("href",Hlink+"");
+            $("#alink-Expand-Page").attr("href",Hlink+"");
+                $("#alink-Expand-Page-UAV_MAS").attr("href",Hlink+"/Expand/Page/About_Designer_Page_for_UAV_MAS/");
+                $("#alink-Expand-Prog-MusicPlayer").attr("href",Hlink+"/Expand/Prog/MusicPlayer/");
+            $("#alink-Expand-Prog").attr("href",Hlink+"");
+                $("#alink-Expand-Prog-2048").attr("href",Hlink+"/Expand/Prog/2048/");
+    });
+</script>
