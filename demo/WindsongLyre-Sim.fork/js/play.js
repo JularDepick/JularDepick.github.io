@@ -92,7 +92,7 @@ function setVolumeOnce() {
     let volumeDom=document.getElementById('volume');
     volumeDom.addEventListener('change',()=>{
         curVolume=(volumeDom.value/100.0);
-        console.log(`got volume ${curVolume}`);
+        // console.log(`got volume ${curVolume}`);
     });
 }
 
@@ -169,10 +169,10 @@ document.onkeydown = e => {
         return ;
     }
     let akey=e.key;
-    console.log(`Got key down: ${akey}`);
+    // console.log(`Got key down: ${akey}`);
     if('A'<=akey && akey<='Z') {
         const lowerKey = String.fromCharCode(akey.charCodeAt(0) + 32);
-        console.log(`Enlow key: ${akey} to ${lowerKey}`);
+        // console.log(`Enlow key: ${akey} to ${lowerKey}`);
         akey = lowerKey;
     }
     if('a'<=akey && akey<='z') {
@@ -191,7 +191,7 @@ document.onkeyup = e => {
     console.log(`Got key up: ${akey}`);
     if('A'<=akey && akey<='Z') {
         const lowerKey = String.fromCharCode(akey.charCodeAt(0) + 32);
-        console.log(`Low key: ${akey} to ${lowerKey}`);
+        // console.log(`Low key: ${akey} to ${lowerKey}`);
         akey = lowerKey;
     }
     if('a'<=akey && akey<='z') {

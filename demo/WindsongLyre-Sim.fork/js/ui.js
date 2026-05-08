@@ -28,7 +28,7 @@ function showTextarea(id,target) { // target = true / false
     whichDOM.classList.remove(rmClsName);
     whichDOM.classList.add(adClsName);
     show[id] = target;
-    console.log(`${id} act: ${target}`);
+    // console.log(`${id} act: ${target}`);
 }
 
 /* // 检测回车事件
@@ -54,7 +54,7 @@ document.querySelectorAll('button').forEach(el => {
 });
 
 document.addEventListener('keydown', e => {
-    console.log(`Got key down for UI: ${e.key}`);
+    // console.log(`Got key down for UI: ${e.key}`);
     if (e.key === 'Tab') {
         // 禁止Tab键唤聚焦浏览器界面组件
         e.preventDefault();
