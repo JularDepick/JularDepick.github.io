@@ -100,9 +100,13 @@ function setVolumeOnce() {
 function playSound(buffer, detune = 0) {
     if (fallback) {
         setVolumeOnce();
-        buffer.volume = curVolume;
-        buffer.currentTime = 0;
-        buffer.play();
+        let source = buffer.cloneNode();
+        source.volume = curVolume;
+        if (detune !== 0) {
+            source.playbackRate = Math.pow(2, detune / 1200);
+        }
+        source.play();
+        source.onended = () => source.remove();
     } else {
         let source = aCtx.createBufferSource();
         source.buffer = buffer;
@@ -236,22 +240,31 @@ function playSheet(string, i = 0) {
     let group = [];
     if (i >= string.length || stopped) {
         stopped = false;
-        for (delayNum in delay) newDelay[delayNum] = delay[delayNum];
+        for (let j = 0; j < delay.length; j++) newDelay[j] = delay[j];
         return;
-    } else if (string[i] == '(') {
-        i++;
-        while (string[i] != ')') {
-            play(string[i].toLowerCase());
-            i++;
-        }
+    } else if (string[i] == ',' || string[i] == '.') {
+        // 逗号 = 1个基础空白音，句号 = 4个基础空白音
+        delayTime = string[i] == ',' ? newDelay[3] : newDelay[3] * 4;
         if (string[++i] == '|') {
             group = getNewDelayTime(string, i);
             delayTime = group[0];
             i = group[1];
         }
         setTimeout(playSheet, delayTime, string, i);
+    } else if (string[i] == '(') {
+        i++;
+        while (i < string.length && string[i] != ')') {
+            play(string[i]);
+            i++;
+        }
+        if (string[i] == ')' && string[++i] == '|') {
+            group = getNewDelayTime(string, i);
+            delayTime = group[0];
+            i = group[1];
+        }
+        setTimeout(playSheet, delayTime, string, i);
     } else {
-        play(string[i].toLowerCase());
+        play(string[i]);
         if (string[++i] == '|') {
             group = getNewDelayTime(string, i);
             delayTime = group[0];
@@ -283,10 +296,13 @@ function getStringLetter(string, i) {
 }
 
 function getNewDelayTime(string, i) {
-    let newDelayTime = newDelay[string[++i]];
+    let d = newDelay[string[++i]];
+    if (d === undefined) d = newDelay[3];
+    let newDelayTime = d;
     if (string[++i] == "+") {
         do {
-            newDelayTime += newDelay[string[++i]];
+            d = newDelay[string[++i]];
+            if (d !== undefined) newDelayTime += d;
         } while (string[++i] == "+");
     }
     return [newDelayTime, i];
@@ -296,15 +312,16 @@ function getNewDelayTime(string, i) {
 // 点击播放按钮后执行
 function startMusic() {
     stopped = false;
-    bpm = document.getElementById("bpm").value;
-    if (bpm != "") {
-        if (input != "") {
-            updateBpm(bpm);
-            let input = document.getElementById("textareaInput").value;
-            showTextarea('input');
-            playSheet(input.replaceAll('\n', ''));
-        }
-    }
+    let bpmVal = document.getElementById("bpm").value;
+    if (bpmVal == "") return;
+    updateBpm(bpmVal);
+    let raw = document.getElementById("textareaInput").value;
+    // 仅允许：字母a-z、逗号、句号、括号、竖线、加号、数字、换行
+    let sheet = raw.replace(/[^a-zA-Z,.()|+\d\n]/g, '');
+    sheet = sheet.toLowerCase().replace(/\n/g, '');
+    if (sheet == "") return;
+    showTextarea('input', false);
+    playSheet(sheet);
 }
 
 

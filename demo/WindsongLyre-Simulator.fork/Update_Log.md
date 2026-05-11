@@ -1,6 +1,13 @@
 ## 更新日志
+- 2026/05/11 [[v1.0.2]](https://github.com/JularDepick/WindsongLyre-Simulator.fork/tree/v1.0.2) [@JularDepick](https://github.com/JularDepick)
+    基于上一版本 [[v1.0.1]](https://github.com/JularDepick/WindsongLyre-Simulator.fork/tree/v1.0.1) 做了如下更新：
+    - 功能增强：
+        - 兼容模式（离线/Chrome直接打开）下支持多音符同时发音，不再截断
+        - 兼容模式下支持转调功能
+    - 项目维护：
+        - 优化了项目文档的搜索引擎可见性
 - 2026/05/08 [[v1.0.1]](https://github.com/JularDepick/WindsongLyre-Simulator.fork/tree/v1.0.1) [@JularDepick](https://github.com/JularDepick)
-    基于上一版本 [v1.0.0](https://github.com/JularDepick/WindsongLyre-Simulator.fork/tree/v1.0.0) 做了如下更新：
+    基于上一版本 [[v1.0.0]](https://github.com/JularDepick/WindsongLyre-Simulator.fork/tree/v1.0.0) 做了如下更新：
     - bug修复：
         - 修复了同时打开多个功能弹窗的bug
         - 修复了大写状态下字母按键无响应的bug
