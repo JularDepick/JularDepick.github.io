@@ -7,8 +7,8 @@
 | 分类 | 名称 | 说明 | 入口 |
 |:---:|:---:|:---:|:---:|
 | 演示 | ChatAnalysis.SKILL | 「往日种种」群聊深度分析站点 | [https://JularDepick.github.io/SKILL.demo/ChatAnalysis.SKILL](https://JularDepick.github.io/SKILL.demo/ChatAnalysis.SKILL) |
-| 演示 | Ollama-Web-UI | Ollama 模型的 Web 界面(入口自动跳转最新版本) | [https://JularDepick.github.io/Ollama-Web-UI](https://JularDepick.github.io/Ollama-Web-UI) |
-| 演示 | WindsongLyre-Simulator.fork | 原神风物之诗琴模拟器(入口自动跳转最新版本) | [https://JularDepick.github.io/WindsongLyre-Simulator.fork](https://JularDepick.github.io/WindsongLyre-Simulator.fork) |
+| 演示 | Ollama-Web-UI | Ollama 模型的 Web 界面 | [https://JularDepick.github.io/Ollama-Web-UI](https://JularDepick.github.io/Ollama-Web-UI) |
+| 演示 | WindsongLyre-Simulator.fork | 原神风物之诗琴模拟器 | [https://JularDepick.github.io/WindsongLyre-Simulator.fork](https://JularDepick.github.io/WindsongLyre-Simulator.fork) |
 | 工具 | GitHubNav | GitHub 导航,输入用户名查看公开仓库列表与 README 摘要 | [https://JularDepick.github.io/Web-Tool/GitHubNav](https://JularDepick.github.io/Web-Tool/GitHubNav) |
 | 教程 | ClaudeCode安装教程 | Claude Code 在 Windows 平台上的安装配置教程 | [https://JularDepick.github.io/Tutorial/ToInstallClaudeCode/](https://JularDepick.github.io/Tutorial/ToInstallClaudeCode/) |
 
@@ -21,6 +21,9 @@ JularDepick.github.io/
 ├── site.js                 站点作者信息常量(页面页脚引用)
 ├── favicon.ico             站点图标
 ├── README.md               仓库目录索引
+├── LICENSE                 AGPL-3.0 许可证文本
+├── COPYRIGHT               版权声明
+├── COMMERCIAL.md           商用授权说明
 ├── demo/                   演示项目索引
 │   └── README.md           记录各演示项目仓库地址与演示地址的表格
 ├── menav/                  导航嵌入页(iframe 嵌入 Web-Tool/GitHubNav)
@@ -41,3 +44,14 @@ JularDepick.github.io/
 - 根项目跳转到子项目或演示一律使用远程地址,不使用相对路径跨项目跳转;`tutorial/`、`web-tool/`、`tool/` 目录仍作为直接访问的跳转入口保留
 - 子项目(Tutorial、Web-Tool)独立仓库开发与部署,不使用本仓库资源
 - 在线访问入口:https://julardepick.github.io
+
+## 许可证
+
+- 本仓库采用 (AGPL-3.0) 许可证，详见 [[LICENSE]](./LICENSE) 。
+- **商用闭源授权** 详见 [[COMMERCIAL.md]](./COMMERCIAL.md)
+
+## 版权信息
+
+Copyright (c) 2026 JularDepick
+
+详见[[COPYRIGHT]](COPYRIGHT)。
