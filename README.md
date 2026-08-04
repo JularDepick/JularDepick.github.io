@@ -4,13 +4,23 @@
 
 ## 目录索引
 
-| 分类 | 名称 | 说明 | 入口 |
+| 分类 | 名称 | 说明 | 在线入口 |
 |:---:|:---:|:---:|:---:|
 | 演示 | ChatAnalysis.SKILL | 「往日种种」群聊深度分析站点 | [https://JularDepick.github.io/SKILL.demo/ChatAnalysis.SKILL](https://JularDepick.github.io/SKILL.demo/ChatAnalysis.SKILL) |
 | 演示 | Ollama-Web-UI | Ollama 模型的 Web 界面 | [https://JularDepick.github.io/Ollama-Web-UI](https://JularDepick.github.io/Ollama-Web-UI) |
 | 演示 | WindsongLyre-Simulator.fork | 原神风物之诗琴模拟器 | [https://JularDepick.github.io/WindsongLyre-Simulator.fork](https://JularDepick.github.io/WindsongLyre-Simulator.fork) |
 | 工具 | GitHubNav | GitHub 导航,输入用户名查看公开仓库列表与 README 摘要 | [https://JularDepick.github.io/Web-Tool/GitHubNav](https://JularDepick.github.io/Web-Tool/GitHubNav) |
 | 教程 | ClaudeCode安装教程 | Claude Code 在 Windows 平台上的安装配置教程 | [https://JularDepick.github.io/Tutorial/ToInstallClaudeCode/](https://JularDepick.github.io/Tutorial/ToInstallClaudeCode/) |
+
+## 关联仓库
+
+| 仓库名称 | 仓库地址 | 在线入口 |
+|:---:|:---:|:---:|
+| Tutorial | [https://github.com/JularDepick/Tutorial](https://github.com/JularDepick/Tutorial) | [https://JularDepick.github.io/Tutorial](https://JularDepick.github.io/Tutorial) |
+| Web-Tool | [https://github.com/JularDepick/Web-Tool](https://github.com/JularDepick/Web-Tool) | [https://JularDepick.github.io/Web-Tool](https://JularDepick.github.io/Web-Tool) |
+| SKILL.demo | [https://github.com/JularDepick/SKILL.demo](https://github.com/JularDepick/SKILL.demo) | [https://JularDepick.github.io/SKILL.demo](https://JularDepick.github.io/SKILL.demo) |
+
+> SKILL.demo 聚合多个 SKILL 仓库的实例产物:SKILL 非源码,无法编译出产物,只能在具体情景下演示;各实例的演示地址记录于 `demo/README.md` 表格
 
 ## 目录结构
 
@@ -47,7 +57,7 @@ JularDepick.github.io/
 
 ## 许可证
 
-- 本仓库采用 (AGPL-3.0) 许可证，详见 [[LICENSE]](./LICENSE) 。
+- 本仓库采用 AGPL-3.0 许可证，详见 [[LICENSE]](./LICENSE) 。
 - **商用闭源授权** 详见 [[COMMERCIAL.md]](./COMMERCIAL.md)
 
 ## 版权信息
