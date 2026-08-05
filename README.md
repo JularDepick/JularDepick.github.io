@@ -64,4 +64,4 @@ JularDepick.github.io/
 
 Copyright (c) 2026 JularDepick
 
-详见[[COPYRIGHT]](COPYRIGHT)。
+详见[[COPYRIGHT]](./COPYRIGHT)。
