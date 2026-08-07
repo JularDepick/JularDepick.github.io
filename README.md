@@ -10,6 +10,7 @@
 | 演示 | Ollama-Web-UI | Ollama 模型的 Web 界面 | [https://JularDepick.github.io/Ollama-Web-UI](https://JularDepick.github.io/Ollama-Web-UI) |
 | 演示 | WindsongLyre-Simulator.fork | 原神风物之诗琴模拟器 | [https://JularDepick.github.io/WindsongLyre-Simulator.fork](https://JularDepick.github.io/WindsongLyre-Simulator.fork) |
 | 工具 | GitHubNav | GitHub 导航,输入用户名查看公开仓库列表与 README 摘要 | [https://JularDepick.github.io/Web-Tool/GitHubNav](https://JularDepick.github.io/Web-Tool/GitHubNav) |
+| 工具 | 颜色工具箱 | 输入任意格式颜色,实时预览并一键转换 name、hex、rgb、rgba、hsl、hsla 数值 | [https://JularDepick.github.io/Web-Tool/Color](https://JularDepick.github.io/Web-Tool/Color) |
 | 教程 | ClaudeCode安装教程 | Claude Code 在 Windows 平台上的安装配置教程 | [https://JularDepick.github.io/Tutorial/ToInstallClaudeCode/](https://JularDepick.github.io/Tutorial/ToInstallClaudeCode/) |
 
 ## 关联仓库
