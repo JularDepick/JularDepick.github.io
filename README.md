@@ -6,6 +6,7 @@
 
 | 分类 | 名称 | 说明 | 在线入口 |
 |:---:|:---:|:---:|:---:|
+| 演示 | Agent-Video-Driver.SKILL | 让 Agent 写代码自主生成视频成片的技能 | [https://JularDepick.github.io/Agent-Video-Driver.SKILL](https://JularDepick.github.io/Agent-Video-Driver.SKILL) |
 | 演示 | ChatAnalysis.SKILL | 「往日种种」群聊深度分析站点 | [https://JularDepick.github.io/SKILL.demo/ChatAnalysis.SKILL](https://JularDepick.github.io/SKILL.demo/ChatAnalysis.SKILL) |
 | 演示 | Ollama-Web-UI | Ollama 模型的 Web 界面 | [https://JularDepick.github.io/Ollama-Web-UI](https://JularDepick.github.io/Ollama-Web-UI) |
 | 演示 | WindsongLyre-Simulator.fork | 原神风物之诗琴模拟器 | [https://JularDepick.github.io/WindsongLyre-Simulator.fork](https://JularDepick.github.io/WindsongLyre-Simulator.fork) |
