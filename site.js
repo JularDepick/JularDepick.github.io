@@ -6,7 +6,8 @@ const SITE_REPO_URL = "https://github.com/JularDepick/JularDepick.github.io";
 /* 友情链接列表:文本与网址一一对应 */
 const SITE_FRIEND_LINKS = [
     { text: "WencueCryforme's GitHub Pages", url: "https://WencueCryforme.github.io" },
-    { text: "RikkaLove0721's GitHub Pages", url: "https://RikkaLove0721.github.io" }
+    { text: "RikkaLove0721's GitHub Pages", url: "https://RikkaLove0721.github.io" },
+    { text: "yauntyour's GitHub Pages", url: "https://yauntyour.github.io"}
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
